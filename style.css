@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: rejoy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #dadada;
+}
+.page1 video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 3vw;
+}
+nav h3{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+.page1-content h1{
+    position: absolute;
+   bottom: 0;
+     /* left: 50%; */
+    font-family:rejoy;
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 25vw;
+
+}
+.page1-content h1 span{
+    font-family: rejoy;
+    display: inline-block;
+}
+.page1-content h1 span .capital{
+    text-transform: uppercase;
+}
+.cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #0c0b0a8f;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+.cursor h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vw;
+    color:#fff;
+    font-weight: 500;
+
+}
+ .page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 0 3vw;
+}
+.page2 .part1 nav{
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 1px solid black;
+    padding-bottom: 1vw;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.page2 .part1 h3{
+    font-weight: 100;
+    font-size: 1.5vw;
+    font-weight: 10;
+    margin-top: 3vw;
+    /* border-bottom: 1px solid black; */
+}
+.page2 .content h1{
+    padding: 1vw 5vw;
+    font-size: 4vw;
+    font-weight: 100;
+}
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+.page3 .top{
+    /* background-color: red; */
+    text-align: center;
+    justify-content: center;
+    padding-top: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.page3 .top #one{
+    padding-top: 2vw;
+}
+.page3 .top h2{
+    font-size: 4.5vw;
+    font-weight: 100;
+    /* text-decoration: underline; */
+
+}
+.page3 .top h4 span{
+    font-size: .75vw;
+    background-color: black;
+    color: #fff;
+    font-weight: 100;
+    padding:  .3vw .4vw;
+    border-radius: 10px;
+    
+
+}
+.page3 .top h4 #itag{
+    padding: 1vw 0.5vw;
+    font-weight: 100;
+    /* margin-top: 2vw; */
+
+}
+.page3-elements {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 5vw; /* Add padding to the left and right for spacing */
+    box-sizing: border-box;
+}
+
+.page3-elements .boxes {
+    height: 100%;
+    width: 32.5%; /* Adjusted to ensure proper spacing between the boxes */
+    position: relative;
+    overflow: hidden; /* Ensures that content stays inside the box */
+}
+
+.page3-elements .boxes video,
+.page3-elements .boxes img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page3-elements .boxes img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear 0.7s;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page3-elements .boxes:hover img {
+    opacity: 0;
+}
+.page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 0 3vw;
+}
+.page4 .part1 nav{
+    margin-bottom: 10vw;
+}
+.page4 .part1 nav h3{
+    font-size: 1.8vw;
+    font-weight: 100;
+
+}
+.page4 .part1 h3{
+    line-height: 0.1;
+    font-weight: 100;
+    font-size: 1.5vw;
+    font-weight: 10;
+    margin-top: 3vw;
+    /* border-bottom: 1px solid black; */
+}
+.page4 .content h1{
+    padding: 1vw 5vw;
+    font-size: 4vw;
+    font-weight: 100;
+}
+.page4 .part1 #page4nav{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 5vw;
+    padding: 2vw 2vw;
+    border-bottom: 1px solid black;
+}
+.page4 .content h1{
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+}
+.page5{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    position: relative;
+
+}
+.page5 video{
+    height: 160%;
+    background-color: transparent;
+
+}
+.page5 svg{
+    position: absolute;
+    height: 600px;
+}
+.page5 h1{
+    font-size: 4.5vw;
+    font-weight: 100;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page6 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 0 3vw;
+}
+.page6 .part1 nav{
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 1px solid black;
+    padding-bottom: 1vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 7.5vw;
+}
+.page6 .part1 h3{
+    font-weight: 100;
+    font-size: 1.5vw;
+    font-weight: 10;
+    margin-top: 3vw;
+    /* border-bottom: 1px solid black; */
+}
+.page6 .content h1{
+    margin-top: 5vw;
+    padding: 1vw 5vw;
+    font-size: 4vw;
+    font-weight: 100;
+}
+.page7{
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+}
+.page7 h1{
+    font-size: 9vw;
+    font-weight: 100;
+    width: 96%;
+    margin-left: 2%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1vw;
+}
+.page7 .swiper{
+    /* margin-top: -3%; */
+    height: 60vh;
+    width: 110%;
+    /* background-color: red; */
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 400px ;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 19%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+.loader{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+}
+.loader h3{
+    font-size: 2vw;
+    font-weight: 100;
+}
+.page8{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.page8 h1{
+    font-size: 5vw;
+    font-weight: 100;
+    /* text-decoration: underline; */
+}
+.page9{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.page9 .left{
+    padding: 4vw;
+    color: #fff;
+    position: relative;
+
+}
+
+
+.page9 h2{
+    font-size: 2vw;
+    font-weight: 100;
+    padding-bottom: 1vw;
+}
+.page9 button{
+    font-size: 1.2vw;
+    background-color: transparent;
+    color: #fff;
+    padding: 1vw 2vw;
+    border: 1px solid #fff;
+    border-radius: 50px;
+
+}
+.page9 button:hover{
+    background-color: #fff;
+    color: black;
+}
+.page9 .right{
+    /* background-color: red; */
+    color:#fff;
+    padding: 4vw;
+    line-height: 1.5;
+    display: flex;
+    gap: 10px;
+}
+.page9 .right .rleft h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+
+}
+.page9 .right .rright h3{
+    font-size: .9vw;
+    font-weight: 100;
+
+}
+
+.page9 .left h1{
+    font-size: 25vw;
+    font-weight: 100;
+    position: absolute;
+    top: 65%;
+    left: 200%;
+    transform: translate(-50%,-50%);
+    padding: 4vw;
+}
