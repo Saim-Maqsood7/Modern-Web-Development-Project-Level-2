@@ -49,7 +49,7 @@ nav h4{
 }
 @font-face {
     font-family: rejoy;
-    src: url(./Rejouice-Headline.ttf);
+    src: url(./Rejouice-Headline.woff2);
 }
 .page1-content h1{
     position: absolute;
